@@ -1,7 +1,5 @@
 import { Request, Response } from "express";
-import supertest from 'supertest';
 import { redis, mongoDb } from "./db";
-import app from './index';
 
 export const getRedisData = (input: string) => {
 	return redis.get(input);
